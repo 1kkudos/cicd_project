@@ -39,7 +39,7 @@ jobs:
           echo "NEW_VERSION=$NEW_VERSION" >> $GITHUB_ENV
       - name: Build and Push Frontend Image
         run: |
-          docker build -t jungjunsung/qna-web:v${{ env.NEW_VERSION }} cicd-qna-frontend
+          docker build -t jungjunsung/qna-web:v${{ env.NEW_VERSION }} cicd_qna_frontend
           docker push jungjunsung/qna-web:v${{ env.NEW_VERSION }}
       - name: Update frontend.yaml
         run: |
