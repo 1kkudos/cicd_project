@@ -32,7 +32,7 @@ jobs:
         if: ${{ steps.changed-files.outputs.all_changed_files != '' && contains(steps.changed-files.outputs.all_changed_files, 'docker-qna-frontend/') }}
         id: frontend-version
         run: |
-          CURRENT_VERSION=$(grep -oP 'codingalice/docker-qna-frontend:\K[0-9]+\.[0-9]+' manifest/front/frontend.yaml)
+          CURRENT_VERSION=$(grep -oP '1kkudos/docker-qna-frontend:\K[0-9]+\.[0-9]+' manifest/front/frontend.yaml)
           if [ -z "$CURRENT_VERSION" ]; then
             CURRENT_VERSION=3.0
           fi
