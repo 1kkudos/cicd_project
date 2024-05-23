@@ -16,7 +16,7 @@ spec:
         app: frontend
     spec:
       containers:
-        - image: jungjunsung/qna-web:v5.0
+        - image: jungjunsung/qna-web:v6.0
           name: front
           volumeMounts:
             - mountPath: /etc/localtime
