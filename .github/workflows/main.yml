@@ -1,5 +1,5 @@
 
-name: Update Manifest on Develop Change
+name: Qan Ci Workflows
 
 on:
   push:
